@@ -1,7 +1,8 @@
 # MotionRec
 This repository contains a Keras implementation of the paper 'MotionRec: A Unified Deep Framework for Moving Object Recognition' accepted in WACV 2020. To the best of our knowledge, this is a first attempt for simultaneous localization and classification of moving objects in a video, i.e. moving object recognition (MOR) in a single-stage deep learning framework.
 
-We used the code base of [RetinaNet](https://github.com/fizyr/keras-retinanet) for our work. 
+We used the code base of [fizyr/keras-retinanet](https://github.com/fizyr/keras-retinanet) for our work.
+We forked off from [fizyr/keras-retinanet](https://github.com/fizyr/keras-retinanet) tag 0.5.1.
 
 
 ## Description
@@ -211,13 +212,20 @@ NOTE: **Snapshot and model of trained Motionrec model can be found in snapshots 
 
 <h4 align="center" style="text-align: center;">
   <img src="results/qualitative_result.png" alt="Qualitative results"/></br></br>
-  <img src="results/qualitative_results.gif" alt="MotionRec"/></br>
+  <img src="results/qualitative_results.gif" alt="MotionRec"/></br></br>
+  <a href="https://www.youtube.com/watch?v=NXVZZiBVYDM&feature=youtu.be" target="_blank"><img src="results/youtube.PNG" 
+alt="youtube link" border="1" /></a></br></br>
  Qualitative results of our method for unseen video sequences sofa, winterdriveway and parking from CDnet 2014 dataset.
 </h4> </br> </br>
 
 
 
+
+
 ## Contributors
+
+We forked off from [fizyr/keras-retinanet](https://github.com/fizyr/keras-retinanet) tag 0.5.1.    
+Thanks to fizyr/keras-retinanet team.
 
 Lav Kush Kumar          (lavkushkumarmnit@gmail.com)    
 Murari Mandal           (murarimandal.cv@gmail.com)    
