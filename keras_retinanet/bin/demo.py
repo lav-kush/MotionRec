@@ -15,7 +15,7 @@ import tensorflow as tf
 
 # For using single gpu, enter gpu id
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # Allow relative imports when being executed as script.
 if __name__ == "__main__" and __package__ is None:

@@ -206,9 +206,10 @@ def create_callbacks(model, training_model, prediction_model, validation_generat
         )
         callbacks.append(tensorboard_callback)
 
-    evaluation = Evaluate(validation_generator, tensorboard=tensorboard_callback, weighted_average=args.weighted_average)
-    evaluation = RedirectModel(evaluation, prediction_model)
-    callbacks.append(evaluation)
+    if args.evaluation and validation_generator:
+        evaluation = Evaluate(validation_generator, tensorboard=tensorboard_callback, weighted_average=args.weighted_average)
+        evaluation = RedirectModel(evaluation, prediction_model)
+        callbacks.append(evaluation)
 
     # save the model
     if args.snapshot:
