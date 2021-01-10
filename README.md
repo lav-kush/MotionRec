@@ -60,6 +60,12 @@ class_name,id
 ```
 Indexing for classes starts at 0. Do not include a background class as it is implicit.
 
+### Env setup
+* Keras version: 2.3.1
+* tf version: 1.15.0
+* CUDA Version: 10.0.130
+
+
 ### Pretrained models
 
 Model summary can be found in model_summary.md.
